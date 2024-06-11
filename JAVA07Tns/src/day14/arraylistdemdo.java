@@ -1,9 +1,10 @@
 package day14;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 
-public class arraylistdemdo {
+public class arraylistdemdo{
 
 	public static void main(String[] args) 
 	{
@@ -23,13 +24,21 @@ public class arraylistdemdo {
 		System.out.println("Is 30 present: "+a.contains(30));
 		System.out.println("Is 300 present: "+a.contains(300));
 		System.out.println("Index of 20 is: "+a.indexOf(20));
+		System.out.println("***************************************");
+		
+		System.out.println("remove (30) : " +a.remove(30));
+		System.out.println("List after remove" +a);
+		System.out.println(a.remove(a.indexOf(4)));
+		
+		Collections.sort(a);
+		System.out.println("Sorting list "+a);
+		
 
 		Iterator i=a.iterator();
 		System.out.println("---------------------------------------");
 		while(i.hasNext())
 			
 			System.out.println(i.next());
-		
 
 	}
 
