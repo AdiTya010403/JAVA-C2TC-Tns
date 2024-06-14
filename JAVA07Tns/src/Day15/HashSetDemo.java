@@ -78,6 +78,5 @@ public class HashSetDemo {
 		System.out.println("Second Set: "+hs2);
 		System.out.println("----------------------------------");
 		
-		
 	}
 }
